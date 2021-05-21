@@ -1,0 +1,15 @@
+<h2>Club name: {{club.name}}</h2>
+<img src={{club.pictureOfLogo}} />
+<div class="description">
+<div>Year of found: {{club.yearOfFound}} </div><br>
+<div>Club colors: {{club.colors}}</div><br>
+<div>Club owner: {{club.owner}}</div><br>
+<button class="btn-show-stadium" (click)="showStadium()">Show stadium</button>
+</div>
+
+<div class="stadium-show" *ngIf="display">
+    <app-stadium-detail [stadium]="stadium"></app-stadium-detail>
+</div>
+
+
+
